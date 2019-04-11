@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>aula 11-04</title>
+		<style>
+            body{
+                font-family: sans-serif;
+            }
+            .total{
+                background-color: #eee;
+                padding: 8px;
+                border-radius: 13px 13px 0 0;
+            }
+            .titulo{
+                text-align: center;
+                border:1px solid black;
+                border-radius: 13px;
+                background-color: #ffffff;
+                text-transform: uppright;
+            }
+            .corpo{
+                border: 1px solid black;
+                border-radius: 13px;
+                margin-top: 10px;
+                background-color: #ffffff;
+                padding: 0 10px;
+                overflow: auto;
+            }
+		</style>
+	</head>
+	<body>
+        <div class="total">
+            <div class="titulo">
+              <h1>Cadastro Pessoa Física</h1>
+            </div>
+            <div class="corpo">
+                <form method="post" action="">
+                    <table>
+                        <tr>
+                            <td colspan="2" alignleftr>
+                                <label for="nome">Nome </label>
+                                    <input size ="100" id="nome"type="text" required name="nome"/>
+                            </td>
+                            <td align="center">
+                                <label for="email">Est Civil </label>
+                                    <input id="text" type="emial" required name="email"/>
+                            </td>
+                            <td align="right">
+                                <label for="data">data de nascimento</label>
+                                    <input id="data" type="date" required name="data"  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="left">
+                                <label for="local">Local de nascimento</label>
+                                    <input  size ="80" id="local" type="text" required name="local" />
+                            </td>
+                            <td align="center">
+                                <label for="rg">RG</label>
+                                    <input id="rg" type="number" required name="rg" />
+                            </td>
+                            <td align="right">
+                                <label for="cpf">CPF</label>
+                                    <input id="cpf" type="number" required name="cpf" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" align="left">
+                                <label for="residencia">Residência</label>
+                                    <input  size ="180" id="residencia" type="text" required name="residencia">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="left">
+                                <label for="fone">Fone</label>
+                                    <input size ="90"  id="fone" type="text" required name="fone">
+                            </td>
+                            <td align="center">
+                                <label for="bairro">Bairro</label>
+                                    <input id="bairro" type="text" required name="bairro" />
+                            </td>
+                            <td align="right">
+                                <label for="cidade">Cidade</label>
+                                    <input id="cidade" type="text" required name="cidade" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <label for="tempo">Há qto. tempo</label>
+                                    <input id="tempo" type="text" required name="tempo" />
+                            </td>
+                            <td align="center">
+                                <label for="propria"> Casa propria?</label>
+                                    <input id="propria" type="text" required name="propria" />
+                            </td>
+                            <td align="center">
+                                <label for="aluguel">Aluguel R$</label>
+                                    <input id="aluguel" type="number" required name="aluguel" />
+                            </td>
+                            <td align="right">
+                                <label for="Pensao">Pensão R$</label>
+                                    <input id="pensao" type="number" required name="pensao" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="left">
+                                <label for="anterior">Res. Ant.</label>
+                                    <input size ="88"  id="anterior" type="text" required name="anterior">
+                            </td>
+                            <td align="center">
+                                <label for="cidant">Cidade</label>
+                                    <input id="cidant" type="text" required name="cidant">
+                            </td>
+                            <td align="right">
+                                <label for="qtotempo">Qto. tempo</label>
+                                    <input id="qtotempo" type="datetime" required name="qtotempo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="left">
+                                <label for="trb">Local de trabalho</label>
+                                    <input size ="78"  id="trb" type="text" required name="trb" />
+                            </td>
+                            <td colspan="2" align="right">
+                                <label for="funct">Função</label>
+                                    <input id="funct" type="text" required name="funct" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="left">
+                                <label for="endereco">Endereço</label>
+                                    <input size ="90"  id="endereco" type="text" required name="endereco" />
+                            </td>
+                            <td align="center">
+                                <label for="cid2">Ciddade</label>
+                                    <input id="cid2" type="text" required name="cid2" />
+                            </td>
+                            <td align="right">
+                                <label for="fone2">Fone</label>
+                                    <input  size ="100" id="fone2" type="number" required name="fone" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="left">
+                                <label for="admito">Admito em</label>
+                                    <input size ="100"  id="admito" type="date" required name="admito" />
+                            </td>
+                            <td align="center">
+                                <label for="empregador">Reg. no empregador</label>
+                                    <input id="empregador" type="text" required name="empregador"/>
+                            </td>
+                            <td align="right">
+                                <label for="salar">Salario R$</label>
+                                    <input id="salar" type="number" required name="salar" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="left">
+                                <label for="empregoant">Emprego Ant.</label>
+                                    <input size ="90"  id="empregoant" type="text" required name="empregoant" />
+                            </td>
+                            <td align="center">
+                                <label for="de">de</label>
+                                    <input id="de" type="date" required name="de" />
+                            </td>
+                            <td align="right">
+                                <label for="ate">até</label>
+                                    <input id="ate" type="date" required name="ate" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </body>
+    </div>
+</html>
